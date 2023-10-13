@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- link:css -->
-    <link rel="stylesheet" href="style.css">
-    <!-- script:src -->
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <header>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<!-- link:css -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- script:src -->
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<header>
+			<div class="logo">
+				<h1>Cubo Mágico</h1>
+			</div>
 
-    </header>
+			<div class="actions">
+				<img src="./icons/reset.svg" class="icon" id="reset" />
+			</div>
+		</header>
 
-    <section id="form">
-        <h1>Records Cubo</h1>
+		<form id="form">
+			<input type="text" placeholder="Nome" id="name" required />
+			<input type="number" step="0.1" placeholder="Tempo" id="time" required />
+			<button type="submit">ENVIAR</button>
 
-        <form>
-            <input type="text" placeholder="Nome" id="name">
-            <input type="text" placeholder="Tempo" id="time">
-            <button type="submit">ENVIAR</button>
-        </form>
-    </section>
+			<div class="info">
+				<h3>Total de Registros &mdash; <span id="total-records">0</span></h3>
+				<h3>Melhor Tempo &mdash; <span id="best">N/A</span></h3>
+			</div>
+		</form>
 
-    <section id="classification">
-        <h2>Classificação</h2>
-
-        <div class="classification">
-            <div class="card">
-                <h3 class="position">01.</h3>
-                <span class="name">CNPJoto</span>
-                <span class="time">00:52.2</span>
-            </div>
-        </div>
-    </section>
-</body>
+		<section>
+			<div id="classification"></div>
+		</section>
+	</body>
 </html>
