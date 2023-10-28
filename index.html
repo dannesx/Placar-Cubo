@@ -3,7 +3,10 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
+		<link rel="shortcut icon" href="./icons/favicon/trophy-16.png" type="image/x-icon">
+		<link rel="shortcut icon" href="./icons/favicon/trophy-32.png" type="image/x-icon">
+		<link rel="shortcut icon" href="./icons/favicon/trophy-96.png" type="image/x-icon">
+		<title>Ranking - Cubo Mágico</title>
 		<!-- link:css -->
 		<link rel="stylesheet" href="style.css" />
 		<!-- script:src -->
@@ -34,5 +37,17 @@
 		<section>
 			<div id="classification"></div>
 		</section>
+
+		<div class="modal" id="modal">
+			<div class="modal-wrapper">
+				<h3>Apagar registro</h3>
+				<p>Tem certeza que deseja apagar o tempo de Daniel?</p>
+				<span class="stats" id="stats"></span>
+				<div class="actions">
+					<button class="outlined" id="close">Cancelar</button>
+					<button id="delete">Apagar</button>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
